@@ -1,0 +1,163 @@
+﻿body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	color: #444;
+}
+	
+h1 {
+	font-weight: 600;
+	font-size: 1.7em;
+	color: #2a8eab;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: #2590d4;
+	font-weight: bold;
+}
+
+
+.wrapper {
+	width:100%;
+	background: #fafafa;
+}
+
+.top_wrapper {
+	height: 420px;
+	background: #2a8eab;
+	color: #e8e8e8;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1.3em;
+	font-stretch: extra-expanded;
+}
+
+.top_wrapper__img {
+	width: 90%;
+	max-width: 700px;
+}
+
+.top_wrapper__linkbtn {
+	display: block;
+	width: 310px; 
+	text-align: center;
+	margin: 20px auto;
+	height: 45px;
+	line-height: 45px;
+	color: #444;
+	background-color: #ffbf00;
+	cursor: pointer;
+}
+
+.bottom_wrapper {
+	height: 100px;
+	color: #e8e8e8;
+	background: #2a8eab;
+	text-align:center;
+	font-size: 1.2em;
+	padding-top: 15px;
+}
+
+.bottom_wrapper__link {
+	display: inline-block;
+	color: #e8e8e8;
+	margin: 0;	
+}
+
+.content {
+	max-width: 1040px;
+	font-size: 1.2em;
+	margin: 15px auto;
+	padding: 10px 20px;
+}
+
+.content p {
+	text-align: justify;
+}
+
+.content li {
+	font-size: 1.1em;
+	list-style-type: none;
+	margin: 10px auto;
+}
+
+.content li:before {
+	content: " –  " ;
+}
+
+.flex-feature {
+	width: 100%;
+	margin: 20px auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.flex-feature h2 {
+	font-size: 1.2em;
+	text-align: center;
+	color: #2a8eab;
+}
+
+.item {
+	background: #fff;
+	font-size: .9em;
+	width: 270px;
+	margin: 15px;
+	padding: 15px;
+	min-height: 250px;
+	border: 1px solid #cecece;
+}
+
+.first-lesson__btn {
+	display: block;
+	width: 310px;
+	text-align: center;
+	margin: 20px auto;
+	height: 45px;
+	line-height: 45px;
+	cursor: pointer;
+	color: #fafafa;
+	background-color: #2a8eab;
+}
+
+.help-page-wrap {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.help-page-wrap__item {
+	width: 280px;
+	min-height: 300px;
+	background: #fff;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #cecece;
+}
+
+.help-page-wrap__title-item {
+	font-size: 1.2em;
+	text-align: center !important;
+}
+
+.logo_blog {
+	float: left;
+	margin: 15px;
+}
+
+.date-bold {
+	font-weight: bold;
+}
+
+
+.red-word {
+  color: #cc4125;
+}
+
+.green-word{ 
+  color: #6aa84f;
+}

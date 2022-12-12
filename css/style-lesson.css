@@ -1,0 +1,557 @@
+html,body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	background: #e1e1e1;
+	color: #444;
+  font-family: Open Sans;
+}
+
+/*----------------------------------------------------------------
+ЗАГОЛОВОК (МЕНЮ) 
+-----------------------------------------------------------------*/
+
+header {
+	z-index: 9;
+	font-family: Noto Sans;
+	opacity: .9;
+	top: 0;
+	width: 100%;
+	position: fixed;
+}
+
+
+button {
+  font: inherit;
+  border-radius: none;
+  box-shadow: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.main-nav-flex {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.flexy-nav__items {
+  display: none;
+  flex: 1;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.flexy-nav__items--visible {
+  display: flex;
+}
+
+.flexy-nav-logo__item {
+  display: none;
+}
+
+.flexy-nav__item {  
+  background-color: #1c819d;
+  border-bottom: solid 1px #e7e7e7;
+}
+
+.flexy-nav__item:last-child {
+  border-bottom: 0;
+}
+
+.flexy-nav__link {
+  padding: 8px; 
+  display: block;
+  text-decoration: none; 
+  line-height: 30px;
+  color: #e8e8e8;
+}
+
+/* nav toggle */
+
+.flexy-nav__toggle {
+  margin: 0;
+  color: #e8e8e8;
+  line-height: 30px;
+  padding: 4px;
+  background-color: #1c819d;
+  border: none;
+  text-transform: uppercase;
+}
+
+.flexy-nav__toggle:focus {
+  outline: none;  
+}
+
+.right-sidebar {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.right-ads, #aside1 {
+  margin: 0 auto;
+  width: 320px; 
+}
+
+.right-donate{
+	width: 240px;
+	margin: 0 auto;
+}
+
+.hdr-sidebar_index, .hdr-sidebar_notes {
+  text-align: center !important;
+  color: #1c819d;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.index {
+	font-family: Open Sans;
+	font-size: 1em;
+	text-align:left;
+}
+
+.index ul{
+	list-style-type: none;
+}
+.index li{
+	margin-bottom: 10px;
+}
+
+.index li a:hover, .index li.active a{	
+	margin-bottom: 10px;
+}
+
+.notes {
+  font-family: Open Sans;
+  font-size: 1em;
+  text-align:left;
+}
+
+.notes ul{
+  list-style-type: none;
+}
+.notes li{
+  margin-bottom: 25px;
+}
+
+.notes li a:hover{	
+	margin-bottom: 10px;
+}
+
+
+
+/*----------------------------------------------------------------
+КОНТЕНТ
+-----------------------------------------------------------------*/
+#flexy-con {
+  margin: 40px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1242px;
+  background-color: #fefefe;
+  font-family: Open Sans;
+}
+
+#flexy-con p {
+  margin: 10px 25px;
+  text-align: justify;
+}
+
+#flexy-con h1,h2{
+	text-align: center;
+	font-size: 1.5em;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color: #1C819D;
+}
+
+#flexy-con h3 {
+	margin: 20px 50px;
+}
+
+.con__img { 
+  width: 95%;
+}
+
+.con__img-small { 
+  width: 100%;
+  max-width: 400px;
+}  
+
+.con__img-st{
+   width: 80%;
+}
+
+
+iframe.video {
+  display: block;
+  width: 85%; 
+  max-width: 600px;
+  height: 340px;
+  margin: 0 auto;
+  border: 0;
+}
+
+iframe.step {
+  display: block;
+  width: 90%; 
+  max-width: 800px;
+  height: 550px;
+  margin: 0 auto;
+  border: 0;
+}
+
+
+.bread-nav {
+  margin: 25px;
+  font-size: .8em;
+  opacity: .9;
+}
+
+pre.code{
+	max-width: 275px ;
+}
+
+.foot-less-nav{
+  display: flex;
+  flex-direction: column;
+  	margin: 10px auto 30px auto;
+}
+
+.foot-less-nav__item{
+	display: block;
+	flex-direction: column;
+	text-align: center;
+	height: 40px;
+	width: 280px;
+	line-height: 40px;
+	margin: 5px auto;
+}
+
+.share-btn{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*----------------------------------------------------------------
+ПОДВАЛ
+-----------------------------------------------------------------*/
+footer {
+	margin: 0 auto;
+  max-width: 1242px;
+  min-height: 140px;
+}
+
+.bottom-links  {
+	margin-bottom: 35px; 
+	list-style: none;
+	font-size: 1.2em;
+ 
+}
+
+
+
+/* media queries */
+/*----------------------------------------------------------------
+ЗАГОЛОВОК МЕДИА ЗАПРОСЫ
+-----------------------------------------------------------------*/
+
+
+@media all and (min-width: 600px) {
+
+  .main-nav-flex {
+    flex-direction: row;
+  }
+
+  .flexy-nav__items {
+    display: flex;
+		background: #1c819d;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+  }
+
+  .flexy-nav__item {
+    flex: 1;
+    max-width: 200px;
+		background: #1c819d;
+    margin-right: 4px;
+    border-bottom: none;
+  }
+
+  .flexy-nav-logo__item {
+    display: block;
+    flex: 1;
+    max-width: 120px;
+		background: #1c819d;
+    margin-right: 4px;
+    border-bottom: none;
+  }
+  
+  .flexy-nav__link {
+    padding: 0;
+    line-height: 80px;
+		height: 80px;
+  }
+
+  .flexy-nav__item :hover {
+    background-color: #9bc7d3;
+    border-bottom: 2px solid #fff;
+    color: #222;
+  }   
+  
+  .flexy-nav__link img {
+    vertical-align: middle;
+  }
+
+  .flexy-nav__toggle {
+    display: none;
+  }
+
+  #flexy-con{
+    margin-top: 80px;
+  }
+  
+  .flexy-con__sidebar {
+    padding: 0;
+	  width: 100%; 
+  } 
+  
+  .right-ads {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  #aside1 {
+    width: 100%;
+    display: flex;
+	  flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .index, .notes {
+    width: 320px; 
+  }
+  
+  .con__img { 
+	  max-width: 600px;
+  }  
+  
+
+@media all and (min-width: 1024px) {
+/*----------------------------------------------------------------
+КОНТЕНТ МЕДИА ЗАПРОСЫ 1000
+-----------------------------------------------------------------*/
+  #flexy-con{
+    margin-top: 80px;
+	  flex-direction: row;
+  }
+  
+  .flexy-con__sidebar {
+	  width: 320px;
+  }
+  
+  .flexy-con__content {
+    flex: 1;
+  }
+  
+  #aside1 { 
+    display: block;
+  }
+
+  .form-name {
+    display: block;
+    max-width: 290px;
+  }
+  
+  .form-text{
+    display: inline-block !important;
+    max-width: 750px !important;
+    height: 134px !important;
+    margin: 8px;
+  }
+
+  .g-recaptcha {
+    display: inline-block !important;
+    width: 166px;
+    margin-left: 10px;
+  }
+  
+  
+  .form-button {
+    max-width: 301px;
+    height: 40px;
+  }
+  
+  pre.code{
+    max-width: 890px;
+  }
+
+  footer {
+    width: 95%;
+  }
+
+  .bottom-links  {
+    list-style: none;
+    font-size: 1.2em;
+  }
+ 
+}
+
+
+
+.donation_dialogue {
+	margin: 0 25px 10px 45px;
+}
+
+.donation_dialogue p {
+	line-height: 1.5;
+	font-style: italic;
+}
+
+.donation_block {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 25px;
+}
+
+.donation_block div {
+	width: 320px;
+	
+	border-radius: 2px;
+	margin: 15px;
+}
+
+.donBlock {
+	margin: 15px 25px;
+	margin-bottom: 30px;
+}
+
+.donBlock-name {
+	font-size: 1.1em;
+	color: #1c819d;
+	margin-bottom: 7px;
+}
+
+.donBlock-value {
+	font-style: bold;
+	color: #333;
+}
+
+.donBlock-comment {
+	font-style: italic;
+	margin-left: 10px;
+}
+
+.donBlock-answer {
+	margin-left: 10px;
+	color: #cc4125;
+	font-style: bold;
+}
+
+
+/*         
+ОБЩИЕ ТЕГИ
+*/
+
+a { 
+  color:#1C819D;
+  text-decoration: none;
+}
+
+a:hover { 
+  color: #cc4125; 
+}
+
+.img-center {
+	text-align: center;
+}
+
+.img-center p{
+	text-align: center !important;
+	font-style: oblique;
+	font-size: .9em;
+	margin-top: 5px;
+	font-family: Open Sans;
+}
+
+.code-left p{
+  font-style: oblique;
+  font-size: .9em;
+  margin-bottom: 0;
+  font-family: Open Sans;
+}
+
+.spoiler {
+  display: none;
+}
+
+.video-center {
+	margin: 20px auto 20px auto;
+}
+
+.display {
+	background: #cdcdcd;
+	color: #cc4125;
+	min-height: 100px;
+	padding: 10px;
+	width: 80%;
+	font-family: courier;
+}
+
+.now-check {
+  color: #cc4125 !important;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.word-def {
+	font-size: 1.1em;
+	color: #cc4125;// #6aa84f;
+}
+
+.red-word {
+  color: #cc4125;
+}
+
+.green-word{ 
+  color: #6aa84f;
+}
+
+.key-word {
+	display: inline-block;
+	padding: 2px;
+	font-family: 'Courier New';
+	font-weight: bold;
+	background-color: #cee3f6;
+}
+
+.text-rule, .text-example {
+	border: 1px dashed #444;
+	background: #fff;
+	width: 95%;
+	margin: 0 auto;
+}
+
+.text-title-rule {
+	font-size: 1.1em;
+	color: #cc4125;
+}
+
+.list-tab {
+	margin-left: 25px;
+}
